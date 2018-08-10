@@ -5,7 +5,7 @@
       <li class="collection-header"><h4>Customers</h4></li>
       <li v-for="customer in customers" v-bind:key="customer.id" class="collection-item">
         <!-- <div class="chip">{{customer.dept}}</div> -->
-        {{customer.name}}: {{customer.email}}
+        {{customer.customer_id}}: {{customer.name}}
          <router-link class="secondary-content" v-bind:to="{ name: 'view-customer', params: { customer_id: customer.customer_id }}"><i class="fa fa-eye fa-2x blue-text"></i></router-link>
       </li>
     </ul> 
