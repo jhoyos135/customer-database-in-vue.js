@@ -1,14 +1,16 @@
 {
-  "name": "employeemanager",
+  "name": "customermanager",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Brad Traversy <me@bradtraversy.com>",
+  "author": "Julian",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://jhoyos135.github.io/employee-app",
   "dependencies": {
     "firebase": "^4.8.0",
     "vue": "^2.5.2",

@@ -1,8 +1,9 @@
 <template>
   <div id="home">
     <ul class="collection with-header" id="names">
-      <input class="white-text" type="text" placeholder="Filter by Name" icon="search" v-model="filter">
+
       <li class="collection-header"><h4>Customers</h4></li>
+      
       <li v-for="customer in customers" v-bind:key="customer.id" class="collection-item">
         <!-- <div class="chip">{{customer.dept}}</div> -->
         {{customer.customer_id}}: {{customer.name}}
@@ -20,7 +21,6 @@
 </template>
 
 <script>
-
   import db from './firebaseInit'
   export default {
     name: 'home',
@@ -46,22 +46,9 @@
           this.customers.push(data)
         })
       })
-    },
-computed: {
-    customers() {
-      var customers_filtered = this.customers.filter((customer) => {
-          return customer.toLowerCase().includes(this.filter.toLowerCase());
-        });
-       return customers_filtered;
     }
-    
   }
-  }
-
-
 </script>
-
-
 
 <style>
 input[type=text]:not(.browser-default):focus:not([readonly])+label {
