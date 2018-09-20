@@ -13,6 +13,7 @@
   "homepage": "https://jhoyos135.github.io/employee-app",
   "dependencies": {
     "firebase": "^4.8.0",
+    "gh-pages": "^2.0.0",
     "vue": "^2.5.2",
     "vue-instantsearch": "^1.7.0",
     "vue-router": "^3.0.1"
