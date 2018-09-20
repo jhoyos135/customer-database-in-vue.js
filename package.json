@@ -10,7 +10,7 @@
     "build": "node build/build.js",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://jhoyos135.github.io/employee-app",
+  "homepage": "https://jhoyos135.github.io/customer-database-in-vue",
   "dependencies": {
     "firebase": "^4.8.0",
     "gh-pages": "^2.0.0",
